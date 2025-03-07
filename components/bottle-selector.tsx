@@ -70,7 +70,7 @@ export default function BottleSelector() {
           {bottles.map((bottle) => (
             <div
               key={bottle.id}
-              className={`relative border w-[100px] h-[120px] flex flex-col items-center justify-between bg-white cursor-pointer transition-all ${
+              className={`relative overflow-hidden border w-[100px] h-[120px] flex flex-col items-center justify-between bg-white cursor-pointer transition-all ${
                 selectedBottle === bottle.id
                   ? "border-black border-2"
                   : "border-gray-300 hover:border-gray-400"
@@ -87,7 +87,7 @@ export default function BottleSelector() {
                 {bottle.size}
               </span>
               {bottleDesign.text && selectedBottle === bottle.id && (
-                <span className="absolute w-full text-center text-[10px] overflow-hidden p-1">
+                <span className="absolute w-full text-center text-[10px] overflow-hidden p-1 top-1/2 -translate-y-1/2 max-h-full">
                   {bottleDesign.text}
                 </span>
               )}
