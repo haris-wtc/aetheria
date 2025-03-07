@@ -4,7 +4,6 @@ import { useStore } from "@/store/useStore";
 
 const Reviews = () => {
   const { reviews } = useStore();
-  console.log('reviews', reviews)
 
   if (!Array.isArray(reviews) || !reviews.length) return null;
 

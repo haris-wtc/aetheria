@@ -41,9 +41,9 @@ export function PerfumeReview() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen bg-white">
+    <div className="flex flex-col lg:flex-row min-h-screen bg-white">
       {/* Left Panel */}
-      <div className="w-full md:w-1/3 md:min-w-[428px] p-6 lg:p-8 flex flex-col">
+      <div className="w-full lg:w-1/3 lg:min-w-[428px] p-6 lg:p-8 flex flex-col">
         <div className="mb-8">
           <Aetheria />
         </div>
@@ -65,7 +65,7 @@ export function PerfumeReview() {
       </div>
 
       {/* Right Panel */}
-      <div className="w-full md:w-2/3 p-6 lg:p-8 flex flex-col bg-[#FEFAF3]">
+      <div className="w-full lg:w-2/3 p-6 lg:p-8 flex flex-col bg-[#FEFAF3]">
         <div className="max-w-2xl mx-auto w-full">
           <h2 className="text-[24px] font-bold mb-8">Your story, Bottled!</h2>
 

@@ -9,9 +9,9 @@ import Aetheria from "@/components/aetheria";
 
 export default function PerfumeDesigner() {
   return (
-    <div className="flex flex-col md:flex-row min-h-screen">
+    <div className="flex flex-col lg:flex-row min-h-screen">
       {/* Left Column */}
-      <div className="w-full md:w-1/3 md:min-w-[428px] p-6 lg:p-8 flex flex-col bg-[#FEFAF3]">
+      <div className="w-full lg:w-1/3 lg:min-w-[428px] p-6 lg:p-8 flex flex-col bg-[#FEFAF3]">
         <div className="mb-8">
           <Aetheria />
         </div>
@@ -28,7 +28,7 @@ export default function PerfumeDesigner() {
       </div>
 
       {/* Right Column */}
-      <div className="w-full md:w-2/3 p-8 md:p-12">
+      <div className="w-full lg:w-2/3 p-8 lg:p-12">
         <div className="m-auto max-w-3xl">
           <div className="mb-12">
             <h2 className="text-3xl font-bold mb-2">

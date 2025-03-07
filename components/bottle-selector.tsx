@@ -87,7 +87,7 @@ export default function BottleSelector() {
                 {bottle.size}
               </span>
               {bottleDesign.text && selectedBottle === bottle.id && (
-                <span className="absolute w-full text-center text-[10px] overflow-hidden p-1 top-1/2 -translate-y-1/2 max-h-full">
+                <span className="absolute w-full text-center text-[10px] overflow-hidden p-1 top-1/2 -translate-y-1/2 max-h-full leading-[10px]">
                   {bottleDesign.text}
                 </span>
               )}
