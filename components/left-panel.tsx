@@ -44,6 +44,7 @@ export function LeftPanel() {
 
   const resetImage = () => {
     setImagePreview(null);
+    setFiles(undefined);
     if (fileInputRef.current) {
       fileInputRef.current.value = "";
     }
@@ -142,7 +143,7 @@ export function LeftPanel() {
           </p>
           <div className="flex gap-3 flex-wrap">
             <div className="flex flex-col items-center opacity-50">
-              <div className="w-full h-auto max-w-[60px] aspect-square rounded-full flex items-center justify-center mb-2">
+              <div className="w-full h-auto max-w-[60px] aspect-square rounded-full flex items-center justify-center mb-2 overflow-hidden cursor-pointer">
                 <Image
                   src="images/color.svg"
                   alt="Color icon"
@@ -157,7 +158,7 @@ export function LeftPanel() {
             </div>
 
             <div className="flex flex-col items-center opacity-50">
-              <div className="w-full h-auto max-w-[60px] aspect-square rounded-full flex items-center justify-center mb-2 cursor-pointer">
+              <div className="w-full h-auto max-w-[60px] aspect-square rounded-full flex items-center justify-center mb-2 overflow-hidden cursor-pointer">
                 <Image
                   src="images/music.svg"
                   alt="Music icon"
@@ -172,7 +173,7 @@ export function LeftPanel() {
             </div>
 
             <div className="flex flex-col items-center opacity-50">
-              <div className="w-full h-auto max-w-[60px] aspect-square rounded-full flex items-center justify-center mb-2 cursor-pointer">
+              <div className="w-full h-auto max-w-[60px] aspect-square rounded-full flex items-center justify-center mb-2 overflow-hidden cursor-pointer">
                 <Image
                   src="images/location.svg"
                   alt="Location icon"
@@ -228,7 +229,7 @@ export function LeftPanel() {
             </div>
 
             <div className="flex flex-col items-center opacity-50">
-              <div className="w-full h-auto max-w-[60px] aspect-square rounded-full bg-gray-200 flex items-center justify-center mb-2 overflow-hidden">
+              <div className="w-full h-auto max-w-[60px] aspect-square rounded-full bg-gray-200 flex items-center justify-center mb-2 overflow-hidden cursor-pointer">
                 <Image
                   src="images/person.svg"
                   alt="Person icon"
